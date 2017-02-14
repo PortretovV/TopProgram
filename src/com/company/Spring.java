@@ -2,10 +2,10 @@ package com.company;
 
 
 public class Spring {
-    private int number;
+    private String number;
     private String fioUser;
 
-    public Spring(int number, String fioUser) {
+    public Spring(String number, String fioUser) {
         this.number = number;
         this.fioUser = fioUser;
     }
