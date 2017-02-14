@@ -3,18 +3,20 @@ package com.company;
 
 public class Spring {
     private String number;
-    private String fioUser;
+    private String dataBaseAccess;
+    private String technologyView;
 
-    public Spring(String number, String fioUser) {
+    public Spring(String number, String dataBaseAccess, String technologyView) {
         this.number = number;
-        this.fioUser = fioUser;
+        this.technologyView = technologyView;
+        this.dataBaseAccess = dataBaseAccess;
     }
 
     @Override
     public String toString() {
-        return "Вы используете Спринг{" +
-                "Текущая версия =" + number +
-                ", ваше имя ='" + fioUser + '\'' +
-                '}';
+        return "Вы используете Спринг, " +
+                "Текущая версия = " + number +
+                ", технология представления = "+ technologyView +
+                ", доступ к данным осуществляется посредством = " + dataBaseAccess +"\n";
     }
 }
